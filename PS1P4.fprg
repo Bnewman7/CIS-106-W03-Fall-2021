@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-28 02:57:30 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOC0yODswMjozMToxOCBQTTszMTA0"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOC0yODswMjo1NzozMCBQTTsyOzMyMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AmountofMeal" type="Real" array="False" size=""/>
+            <declare name="Tip" type="Integer" array="False" size=""/>
+            <input variable="AmountofMeal"/>
+            <input variable="Tip"/>
+            <assign variable="Tip" expression="amountofmeal * Tip"/>
+            <output expression="&quot;Tip amount&quot; &amp; Tip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

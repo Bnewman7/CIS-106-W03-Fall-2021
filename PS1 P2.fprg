@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-28 01:22:38 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOC0yNTsxMjo0ODo1NCBQTTszMTEw"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOC0yODswMToyMjozOCBQTTsxMjszMjYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="S1" type="Real" array="False" size=""/>
+            <declare name="S2" type="Real" array="False" size=""/>
+            <declare name="Avg" type="Real" array="False" size=""/>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="S1"/>
+            <input variable="S2"/>
+            <assign variable="Avg" expression="S1 *S2 / 2"/>
+            <assign variable="LastName" expression="&quot;Newman&quot;"/>
+            <output expression="&quot;LastName is&quot; &amp; LastName" newline="True"/>
+            <output expression="&quot;Average is&quot; &amp; Avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-04 02:38:01 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0wNDswMjoyNzozNSBQTTszMTAz"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0wNDswMjozODowMSBQTTsxOzMyMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="CreditsTaken" type="Real" array="False" size=""/>
+            <declare name="TotalTuition" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="CreditsTaken"/>
+            <assign variable="TotalTuition" expression="CreditsTaken * 250 + 100"/>
+            <output expression="&quot;TotalTuition&quot; &amp; TotalTuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

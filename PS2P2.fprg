@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-03 11:22:08 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0wMjsxMTowMTo0NSBBTTszMDc5"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0wMzsxMToyMjowOCBQTTs0OzMyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="Hours" type="Real" array="False" size=""/>
+            <declare name="Payrate" type="Real" array="False" size=""/>
+            <declare name="Grosspay" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="Hours"/>
+            <input variable="Payrate"/>
+            <assign variable="Grosspay" expression="Hours * Payrate"/>
+            <output expression="&quot;Grosspay is&quot; &amp; Grosspay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
