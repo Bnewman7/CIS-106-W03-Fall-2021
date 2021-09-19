@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-17 01:24:57 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0xNTswNjozODozMyBQTTszMTA5"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0xNzswMToyNDo1NyBQTTsxMTszMjY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <declare name="exprice" type="Real" array="False" size=""/>
+            <declare name="tax" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <input variable="qty"/>
+            <if expression="qty &gt; 10000">
+                <then>
+                    <assign variable="Price" expression="10.00"/>
+                </then>
+                <else>
+                    <if expression="qty &gt; 5000 and qty &lt; 10000">
+                        <then>
+                            <assign variable="Price" expression="20.00"/>
+                        </then>
+                        <else>
+                            <assign variable="Price" expression="30.00"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="exprice" expression="qty * Price"/>
+            <assign variable="Tax" expression="exprice * 0.07"/>
+            <assign variable="total" expression="exprice + tax"/>
+            <output expression="&quot;Exstended Price &quot; &amp; exprice" newline="True"/>
+            <output expression="&quot;Tax &quot; &amp; tax" newline="True"/>
+            <output expression="&quot;Total &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
