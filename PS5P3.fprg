@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-26 09:53:50 PM"/>
+        <attribute name="created" value="SG9ja2U7TEFQVE9QOzIwMjEtMDktMjY7MDk6Mzg6NTUgUE07MjI1MA=="/>
+        <attribute name="edited" value="SG9ja2U7TEFQVE9QOzIwMjEtMDktMjY7MDk6NTM6NTAgUE07MTsyMzUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="reply" type="String" array="False" size=""/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="score1" type="Real" array="False" size=""/>
+            <declare name="score2" type="Real" array="False" size=""/>
+            <declare name="count" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to continue. Yes or No.&quot;" newline="True"/>
+            <input variable="reply"/>
+            <while expression="reply == &quot;Yes&quot;">
+                <assign variable="count" expression="count + 1"/>
+                <output expression="&quot;Enter LastName&quot;" newline="True"/>
+                <input variable="lastname"/>
+                <output expression="&quot;Enter score 1&quot;" newline="True"/>
+                <input variable="score1"/>
+                <output expression="&quot;Enter score 2&quot;" newline="True"/>
+                <input variable="score2"/>
+                <assign variable="avg" expression="score1 + score2 / 2"/>
+                <output expression="&quot;Do you want to continue. Yes or No.&quot;" newline="True"/>
+                <input variable="reply"/>
+            </while>
+            <output expression="&quot;Number of Students &quot; &amp; count" newline="True"/>
+            <output expression="&quot;Average exam scores &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
