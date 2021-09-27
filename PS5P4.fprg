@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-25 06:37:06 PM"/>
+        <attribute name="created" value="SG9ja2U7TEFQVE9QOzIwMjEtMDktMjM7MTI6MDA6MzAgQU07MjIwOA=="/>
+        <attribute name="edited" value="SG9ja2U7TEFQVE9QOzIwMjEtMDktMjU7MDY6Mzc6MDYgUE07MTsyMzQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="reply" type="String" array="False" size=""/>
+            <declare name="grosspay" type="Real" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="payrate" type="Real" array="False" size=""/>
+            <declare name="counter" type="Real" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <declare name="thalf" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to continue. Yes or No &quot;" newline="False"/>
+            <input variable="reply"/>
+            <while expression="reply == &quot;Yes&quot;">
+                <output expression="&quot;Enter LastName&quot;" newline="True"/>
+                <input variable="lastname"/>
+                <output expression="&quot;Enter Hours Worked&quot;" newline="True"/>
+                <input variable="hours"/>
+                <output expression="&quot;Enter pay rate &quot;" newline="True"/>
+                <input variable="payrate"/>
+                <assign variable="counter" expression="counter + 1"/>
+                <assign variable="GrossPay" expression="hours * payrate /12"/>
+                <output expression="&quot;Do you want to continue. Yes or No &quot;" newline="False"/>
+                <input variable="reply"/>
+                <if expression="hours &lt; 40">
+                    <then>
+                        <assign variable="thalf" expression="payrate * 1.5"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;LastName &quot; &amp; lastname" newline="True"/>
+            <output expression="&quot;Gross Pay &quot; &amp; grosspay" newline="True"/>
+            <output expression="&quot;Counter &quot; &amp; counter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
