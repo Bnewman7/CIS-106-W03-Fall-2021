@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-30 01:49:57 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0zMDswMToyNzowOSBQTTszMTAy"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0zMDswMToyNzoxNiBQTTsxO0JyYW5kb247REVTS1RPUC1JVDVTQ1ZVOzIwMjEtMDktMjk7MDk6MTQ6MDQgUE07NjM3Ng=="/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0wOS0zMDswMTo0OTo1NyBQTTsxOzMyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pamount" type="Real" array="False" size=""/>
+            <declare name="intrest" type="Real" array="False" size=""/>
+            <declare name="aintrest" type="Real" array="False" size=""/>
+            <declare name="bbalance" type="Real" array="False" size=""/>
+            <declare name="balance" type="Real" array="False" size=""/>
+            <declare name="ebalance" type="Real" array="False" size=""/>
+            <declare name="year" type="Real" array="False" size=""/>
+            <declare name="reply" type="String" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;do you want to continue Yes or No&quot;" newline="True"/>
+            <input variable="reply"/>
+            <while expression="reply == &quot;Yes&quot;">
+                <input variable="intrest"/>
+                <input variable="pamount"/>
+                <input variable="year"/>
+                <assign variable="aintrest" expression="pamount * intrest"/>
+                <assign variable="ebalance" expression="pamount * intrest"/>
+                <assign variable="total" expression="pamount + ebalance"/>
+                <output expression="&quot;do you want to continue Yes or No&quot;" newline="True"/>
+                <input variable="reply"/>
+            </while>
+            <output expression="&quot;Year &quot; &amp; year" newline="True"/>
+            <output expression="&quot;begining balance&quot; &amp; pamount" newline="True"/>
+            <output expression="&quot;ending balance&quot; &amp; ebalance" newline="True"/>
+            <output expression="&quot;Total&quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
