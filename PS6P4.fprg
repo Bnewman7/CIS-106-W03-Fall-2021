@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-05 01:26:45 AM"/>
+        <attribute name="created" value="SG9ja2U7TEFQVE9QOzIwMjEtMTAtMDE7MDc6NDg6NDIgUE07MjIzMA=="/>
+        <attribute name="edited" value="SG9ja2U7TEFQVE9QOzIwMjEtMTAtMDE7MDc6NDg6NTcgUE07MTtIb2NrZTtMQVBUT1A7MjAyMS0xMC0wMTswNjoyODoxNyBQTTs0NjMy"/>
+        <attribute name="edited" value="SG9ja2U7TEFQVE9QOzIwMjEtMTAtMDU7MDE6MjY6NDUgQU07MzsyMzIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="reply" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="reply"/>
+            <while expression="reply == &quot;yes&quot;">
+                <input variable="quantity"/>
+                <input variable="price"/>
+                <assign variable="total" expression="price * quantity"/>
+                <input variable="reply"/>
+            </while>
+            <output expression="&quot;Total&quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
