@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Brandon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 02:10:54 PM"/>
+        <attribute name="created" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0xMC0wNjswNzo1MDoxNCBQTTszMDk1"/>
+        <attribute name="edited" value="QnJhbmRvbjtERVNLVE9QLUlUNVNDVlU7MjAyMS0xMC0xMDswMjoxMDo1NCBQTTsxNzszMjQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="hits" type="Real" array="False" size=""/>
+            <declare name="atbats" type="Real" array="False" size=""/>
+            <declare name="battingave" type="Integer" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="atbats"/>
+            <input variable="hits"/>
+            <call expression="battingave(hits,atbats)"/>
+            <assign variable="battingave" expression="battingave (hits,atbats)"/>
+            <output expression="&quot;LastName &quot; &amp; lastname" newline="True"/>
+            <output expression="&quot;battingave &quot; &amp; battingave" newline="True"/>
+        </body>
+    </function>
+    <function name="battingave" type="Integer" variable="battingave">
+        <parameters>
+            <parameter name="hits" type="Real" array="False"/>
+            <parameter name="atbats" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="battingave" type="Real" array="False" size=""/>
+            <assign variable="battingave" expression="atbats / hits"/>
+        </body>
+    </function>
+</flowgorithm>
