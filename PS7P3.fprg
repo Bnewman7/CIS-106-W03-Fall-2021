@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 10:18:09 PM"/>
+        <attribute name="created" value="SG9ja2U7TEFQVE9QOzIwMjEtMTAtMDg7MDU6MTQ6MjMgUE07MjIyNw=="/>
+        <attribute name="edited" value="SG9ja2U7TEFQVE9QOzIwMjEtMTAtMTA7MTA6MTg6MDkgUE07MjsyMzMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="distance" type="Real" array="False" size=""/>
+            <declare name="city" type="String" array="False" size=""/>
+            <declare name="milespergallon" type="Real" array="False" size=""/>
+            <declare name="gprice" type="Real" array="False" size=""/>
+            <assign variable="gprice" expression="2.50"/>
+            <input variable="distance"/>
+            <input variable="city"/>
+            <assign variable="milespergallon" expression="milespergallon(distance,gprice)"/>
+            <call expression="milespergallon(distance,gprice)"/>
+            <output expression="city" newline="True"/>
+            <output expression="milespergallon" newline="True"/>
+        </body>
+    </function>
+    <function name="milespergallon" type="Real" variable="milespergallon">
+        <parameters>
+            <parameter name="distance" type="Real" array="False"/>
+            <parameter name="gprice" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="milespergallon" type="Real" array="False" size=""/>
+            <assign variable="milespergallon" expression="distance / gprice"/>
+        </body>
+    </function>
+</flowgorithm>
